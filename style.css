@@ -1,0 +1,76 @@
+body {
+    background-color: antiquewhite;
+}
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, li{
+                 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+#nav { 
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+#nav li {
+    float: left;
+    list-style: none;   
+}
+
+#nav a {
+    display: block;
+    color: black;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-right: 1px solid #ccc;
+}
+
+#nav li:last-child a {
+    border-right: none; 
+}
+
+#nav a:hover {
+    font-weight: bold;
+}
+
+#nav:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.header {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(203, 15, 115);
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.sale {
+    font-size: 25px; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+.company {
+    font-size: 25px; 
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.contact {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
