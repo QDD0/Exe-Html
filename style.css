@@ -74,17 +74,4 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, li{
     margin-bottom: 10px;
     text-align: left;
 }
-
-.catalog {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    gap: 20px;
-  }
-  
-  .catalog img {
-    width: 400px;
-    height: auto;
-  }
   
