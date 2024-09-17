@@ -13,7 +13,7 @@
       <li><a href="#catalog">Каталог</a></li>
       <li><a href="#name-comp">О нас</a></li>
       <li><a href="#number">Контакты</a></li>
-      <li><a href="#number">Номер телефона</a></li>
+      <li><a href="#map">Наша карта</a></li>
     </ul>
 
     <div id="fon">
@@ -73,23 +73,35 @@
         </div>
       </div>
 
-      <div class="me">
-        <h1>Контакты</h1>
-        <div id="number">
-          <img
-            src="number.png"
-            alt="Номер телефона"
-            style="width: 300px; height: auto"
-          />
-          <img
-            src="dot.png"
-            alt="Точка на карте"
-            style="width: 300px; height: auto"
-          />
+      <div class="me" style="display: flex; justify-content: space-between;">
+        <div class="contacts" style="margin-left: 30%;">
+          <h1>Контакты</h1>
+          <div id="number" style="display: flex; align-items: center;">
+            <img src="phone.png" alt="Номер телефона" style="width: 30px; height: auto; margin-right: 10px;" />
+            <p style="margin: 0; font-size: 20px;">- 8 (862) 279-56-89</p>
+          </div>
+      
+          <div class="mails" style="display: flex; align-items: center;">
+            <img src="mail.png" alt="mail" style="width: 30px; height: auto; margin-right: 10px;">
+            <p style="margin: 10; font-size: 20px;">- vertex@gmail.com</p>
+          </div>
+      
+          <div class="home" style="display: flex; align-items: center;">
+            <img src="hom-log.png" alt="home" style="width: 30px; height: auto; margin-right: 10px;">
+            <p style="margin: 10; font-size: 20px;">- Чилли Ванилли</p>
+          </div>
+        </div>
+      
+        <div class="information" style="margin-right: 30%; text-align: justify;">
+          <h1>Информация</h1>
+          <p>Заезд: с 16:00 до 22:00</p>
+          <p>Выезд: до 12:00</p>
+          <p>Бесплатный WI-FI</p>
+          <p>Бесплатная парковка</p>
         </div>
       </div>
 
-      <section class="map" style="text-align: center">
+      <section id="map" style="text-align: center">
         <h1 style="text-align: center; font-size: 35px">
           Наш офис находится здесь
         </h1>

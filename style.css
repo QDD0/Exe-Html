@@ -139,3 +139,9 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+.number {
+  display: flex;
+  width: 30px; 
+  height: auto
+}
