@@ -1,147 +1,584 @@
 body {
-  height: 100vh;
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
+  background-color: rgba(255, 255, 255, 0.644);
   justify-content: center;
-  padding-top: 0px;
+  width: 100%;
 }
 
-.menu-bar {
-  border-radius: 25px;
-  height: fit-content;
-  display: inline-flex;
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(10px);
-  align-items: center;
-  padding: 0 0px;
-  margin: 0 0 0 0;
-  position: fixed;
-  z-index: 1000;
-}
-
-.menu-bar li {
-  list-style: none;
-  color: white;
-  font-family: sans-serif;
-  font-weight: bold;
-  padding: 12px 16px;
-  margin: 0 8px;
+.menu li {
   position: relative;
-  cursor: pointer;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
 }
 
-.menu-bar li a {
-  color: white;
+.menu a {
+  color: rgb(0, 0, 0);
+  padding: 20px 20px;
   text-decoration: none;
+  display: block;
 }
 
-.menu-bar li:hover a {
-  color: black;
+.menu a:hover {
+  background-color: #b60000;
 }
 
-.menu-bar li::before {
-  content: " ";
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
   position: absolute;
-  top: 0;
+  background-color: #b60000;
+  width: 50vw;
+  z-index: 1;
+  top: 100%;
   left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  transition: 0.2s;
-  border-radius: 25px;
+  box-shadow: 0px 8px 16px rgba(202, 4, 159, 0.74);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.menu-bar li:hover {
-  color: black;
+.dropdown-content .column {
+  flex: 1;
+  padding: 10px;
+  border-left: 0.5px solid white;
 }
 
-.menu-bar li:hover::before {
-  background: linear-gradient(to bottom, #23e5ff, #fd17a5);
-  box-shadow: 0px 3px 20px 0px black;
-  transform: scale(1.2);
-}
-
-.fon {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-
-.fon img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.content-item h1 {
+.dropdown-content a {
   color: white;
-  font-size: 4rem;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-.catalog {
-  font-size: 35px;
-  margin-top: 50px;
+.dropdown-content a:hover {
+  background-color: #0d1d7a;
+}
+
+.dropdown:hover .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tring {
+  position: absolute;
+  margin-top: 3vh;
+  right: 12%;
+  cursor: pointer;
+}
+
+.start-txt2 {
+  position: absolute;
   text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 28vh;
+  color: white;
+  letter-spacing: 5px;
 }
 
-.catalog-img {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-left: 50px;
+.start-txt {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 25vh;
+  color: white;
+  font-size: 50px;
+  font-family: Impact;
 }
 
-.catalog-row {
-  margin-left: 30px;
-  display: flex;
-  gap: 20px;
+.cloth1 {
+  position: absolute;
+  margin-top: 72vh;
+  margin-left: 14vw;
 }
 
-.catalog-img img {
-  max-width: 45%;
+.Txt-1 {
+  position: absolute;
+  margin-top: 77vh;
+  margin-left: 15vw;
+}
+
+.Txt-1-1 {
+  position: absolute;
+  margin-top: 83vh;
+  margin-left: 15.5vw;
+}
+
+.Txt-1-1-1 {
+  position: absolute;
+  margin-top: 98vh;
+  margin-left: 16vw;
+}
+
+.shirt1 {
+  position: absolute;
+  margin-top: 73vh;
+  margin-left: 21.4vw;
+}
+
+.cloth2 {
+  position: absolute;
+  margin-top: 72vh;
+  margin-left: 32vw;
   height: auto;
-  border-radius: 25px;
 }
 
-.info-comp {
-  display: flex;
-  align-items: flex-start;
-  max-width: 800px;
-  margin: 20px auto;
+.Txt-2 {
+  position: absolute;
+  margin-top: 74vh;
+  margin-left: 34vw;
 }
 
-.info-comp img {
-  width: 300px;
+.Txt-2-2 {
+  position: absolute;
+  margin-top: 95vh;
+  margin-left: 33.7vw;
+}
+
+.shirt2 {
+  position: absolute;
+  margin-top: 79.2vh;
+  margin-left: 38.9vw;
+}
+
+.cloth3 {
+  position: absolute;
+  margin-top: 72vh;
+  margin-left: 50vw;
   height: auto;
-  margin-right: 20px;
-  border-radius: 25px;
 }
 
-.info-text {
+.Txt-3 {
+  position: absolute;
+  margin-top: 74vh;
+  left: 52vw;
+}
+
+.Txt-3-3 {
+  position: absolute;
+  margin-top: 88vh;
+  left: 52vw;
+}
+
+.Txt-3-3-3 {
+  position: absolute;
+  margin-top: 95vh;
+  left: 52vw;
+}
+
+.shirt3 {
+  position: absolute;
+  margin-top: 82.6vh;
+  margin-left: 57.2vw;
+  height: auto;
+}
+
+.cloth4 {
+  position: absolute;
+  margin-top: 72vh;
+  margin-left: 68vw;
+  height: auto;
+}
+
+.Txt-4 {
+  position: absolute;
+  margin-top: 74vh;
+  right: 15vw;
+}
+
+.Txt-4-4 {
+  position: absolute;
+  margin-top: 89vh;
+  right: 19vw;
+}
+
+.Txt-4-4-4 {
+  position: absolute;
+  margin-top: 98vh;
+  right: 21.7vw;
+}
+
+.Txt-4-4-4-4 {
+  position: absolute;
+  margin-top: 99vh;
+  right: 23vw;
+}
+
+.txt2 {
+  position: absolute;
+  margin-top: 110vh;
+  text-align: center;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  font-family: "Josefin Slab", serif;
+  letter-spacing: 4px;
+}
+
+.boll-1 {
+  position: absolute;
+  margin-top: 140vh;
+  left: -7vw;
+  object-fit: cover;
+  clip-path: inset(0 0 0 50%);
+}
+
+.tufli {
+  position: absolute;
+  margin-top: 143vh;
+  left: 8vw;
+}
+
+.boll-2 {
+  position: absolute;
+  margin-top: 134vh;
+  left: 5vw;
+}
+
+.shirt-white {
+  position: absolute;
+  margin-top: 151vh;
+  left: 18vw;
+}
+
+.boll-3 {
+  position: absolute;
+  margin-top: 145vh;
+  left: 15vw;
+}
+
+.shtan {
+  position: absolute;
+  margin-top: 139vh;
+  left: 31vw;
+}
+
+.boll-4 {
+  position: absolute;
+  margin-top: 134vh;
+  left: 26vw;
+}
+
+.heads {
+  position: absolute;
+  margin-top: 146vh;
+  left: 40vw;
+}
+
+.boll-5 {
+  position: absolute;
+  margin-top: 138vh;
+  left: 37vw;
+}
+
+.tufli2 {
+  position: absolute;
+  margin-top: 150vh;
+  right: 40vw;
+}
+
+.boll-6 {
+  position: absolute;
+  margin-top: 143vh;
+  left: 48.5vw;
+}
+
+.shirt-white2 {
+  position: absolute;
+  margin-top: 140vh;
+  right: 29.5vw;
+}
+
+.boll-7 {
+  position: absolute;
+  margin-top: 134vh;
+  left: 59vw;
+}
+
+.zont {
+  position: absolute;
+  margin-top: 147vh;
+  right: 19.5vw;
+}
+
+.boll-8 {
+  position: absolute;
+  margin-top: 140vh;
+  right: 16vw;
+}
+
+.shtan2 {
+  position: absolute;
+  margin-top: 140vh;
+  right: 9.5vw;
+}
+
+.boll-9 {
+  position: absolute;
+  margin-top: 134vh;
+  right: 5vw;
+}
+
+.boll-10 {
+  position: absolute;
+  margin-top: 141vh;
+  right: -7vw;
+  clip-path: inset(0 50% 0 0);
+}
+
+.levis {
+  position: absolute;
+  margin-top: 176.2vh;
+  left: 10vw;
+}
+
+.levis2 {
+  position: absolute;
+  margin-top: 176.2vh;
+  left: 9.2vw;
+}
+
+.levis3 {
+  position: absolute;
+  margin-top: 176.2vh;
+  left: 32.4vw;
+}
+
+.mens {
+  position: absolute;
+  margin-top: 203vh;
+  left: 12vw;
+  font-size: 24px;
+}
+
+.mens-txt {
+  position: absolute;
+  margin-top: 216vh;
+  left: 12vw;
+  font-size: 15px;
+}
+
+.mens-txt2 {
+  position: absolute;
+  margin-top: 219vh;
+  left: 12vw;
+  font-size: 15px;
+}
+
+.mens-txt3 {
+  position: absolute;
+  margin-top: 222vh;
+  left: 12vw;
+  font-size: 15px;
+}
+
+.mens-txt4 {
+  position: absolute;
+  margin-top: 225vh;
+  left: 12vw;
+  font-size: 15px;
+}
+
+.mens-txt5 {
+  position: absolute;
+  margin-top: 228vh;
+  left: 12vw;
+  font-size: 15px;
+}
+
+.mens-txt6 {
+  position: absolute;
+  margin-top: 235vh;
+  left: 12vw;
+  font-size: 20px;
+}
+
+.jeans {
+  position: absolute;
+  margin-top: 190vh;
+  right: 20vw;
+  clip-path: inset(0 15% 0 15%);
+}
+
+.jeans2 {
+  position: absolute;
+  margin-top: 265vh;
+  left: 10vw;
+}
+
+.jeans3 {
+  position: absolute;
+  margin-top: 265vh;
+  left: 23vw;
+}
+
+.jeans4 {
+  position: absolute;
+  margin-top: 265vh;
+  left: 36vw;
+}
+
+.jeans5 {
+  position: absolute;
+  margin-top: 265vh;
+  left: 49vw;
+}
+
+.jeans6 {
+  position: absolute;
+  margin-top: 265vh;
+  left: 62vw;
+}
+
+/* .contacts {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  left: 0%;
+  background-color: rgb(5, 26, 45);
+  margin-top: 0vh;
+  z-index: -1; 
+} */
+
+/* .icon {
+  position: absolute;
+  margin-top: 3vh;
+  left: 10vw;
+}
+
+.contacts2 {
+  position: absolute;
+  margin-top: 8vh;
+  left: 10vw;
+}
+
+.facebook {
+  position: absolute;
+  margin-top: 5vh;
+  right: 35vw;
+  cursor: pointer;
+}
+
+.twitter {
+  position: absolute;
+  margin-top: 5vh;
+  right: 30vw;
+  cursor: pointer;
+}
+
+.rss {
+  position: absolute;
+  margin-top: 5vh;
+  right: 25vw;
+  cursor: pointer;
+} */
+
+#filters {
+  background-color: #0e6c79;
+  width: 200px;
+  float: left;
+  margin-right: 5%;
+  color: white;
+  position: sticky;
+}
+
+.contacts {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  left: 0%;
+  background-color: rgb(5, 26, 45);
+  margin-top: 10%;
+  z-index: -1;
+}
+
+.icon {
+  position: absolute;
+  margin-top: 24vh;
+  left: 10vw;
+}
+
+.contacts2 {
+  position: absolute;
+  margin-top: 30vh;
+  left: 10vw;
+}
+
+.facebook {
+  position: absolute;
+  margin-top: 25vh;
+  right: 30vw;
+  cursor: pointer;
+}
+
+.twitter {
+  position: absolute;
+  margin-top: 25vh;
+  right: 25vw;
+  cursor: pointer;
+}
+
+.rss {
+  position: absolute;
+  margin-top: 25vh;
+  right: 20vw;
+  cursor: pointer;
+}
+
+#maket,
+#elements {
+  display: flex;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
   text-align: justify;
+  margin-top: 5px;
 }
 
-.me {
-  text-align: center;
-  font-size: 25px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.number {
+label {
   display: flex;
-  width: 30px; 
-  height: auto
+  align-items: center;
+}
+
+img {
+  margin-right: 10px;
+}
+
+#Jeans {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#Jeans article {
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+h3 {
+  text-align: center;
+}
+
+#Jeans article:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+h4 {
+  text-align: center;
 }
