@@ -296,30 +296,28 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Базовый фон */
 .base-fon {
   position: relative;
   margin-top: 7%;
   width: 100%;
   height: 600px;
-  background-image: url("img/ZebraTwo.png"); /* Путь исправлен */
+  background-image: url("img/ZebraTwo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* Слой поверх базового фона */
 .base-fon2 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* Совпадает с родителем */
-  background-image: url("img/Layer%205%20copy.png"); /* Пробелы закодированы */
+  height: 100%; 
+  background-image: url("img/Layer%205%20copy.png"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 1; /* Убедиться, что этот слой поверх базового */
+  z-index: 1; 
 }
 
 .levis {
@@ -335,19 +333,19 @@ body {
 }
 
 .logo {
-  margin-top: -0.8%;
-  left: 9.8%;
+  margin-top: -0.9%;
+  left: 10.1%;
   z-index: 2;
 }
 
 .base-shape {
   left: 9.2%;
   z-index: 1;
-  margin-top: -0.8%;
+  margin-top: -1%;
 }
 
 .overlay-shape {
-  left: 27.8%;
+  left: 32.7%;
   z-index: 1;
-  margin-top: -0.8%;
+  margin-top: -0.9%;
 }
