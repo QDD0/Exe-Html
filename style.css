@@ -321,31 +321,227 @@ body {
 }
 
 .levis {
-  position: relative;
+  position: relative; 
   width: 100%;
-  height: auto;
+  height: 260px; 
 }
 
-.base-shape,
-.overlay-shape,
 .logo {
   position: absolute;
-}
-
-.logo {
-  margin-top: -0.9%;
-  left: 10.1%;
-  z-index: 2;
+  margin-top: -1%; 
+  margin-left: 10.3%; 
+  z-index: 2; 
 }
 
 .base-shape {
-  left: 9.2%;
-  z-index: 1;
-  margin-top: -1%;
+  position: absolute;
+  left: 9.5%; 
+  top: -5.6%; 
+  z-index: 1; 
 }
 
 .overlay-shape {
-  left: 32.7%;
+  position: absolute;
+  left: 33%; 
+  top: -5.6%; 
+  z-index: 1; 
+}
+
+.text-content {
+  position: relative; 
+  margin-top: 0px; 
+}
+
+.text-and-image {
+  display: flex; 
+  align-items: flex-start; 
+  justify-content: space-between; 
+  margin-left: 12%; 
+  margin-top: 40px;
+}
+
+.text-content-left {
+  width: 60%; 
+}
+
+.txt-info {
+  font-size: 50px;
+  margin-top: 0;
+}
+
+.txt-info2, .txt-info3, .txt-info4, .txt-info5, .txt-info6 {
+  margin-top: 20px; 
+}
+
+.price-container {
+  display: flex; 
+  align-items: center; 
+  margin-top: 40px;
+}
+
+.txt-price {
+  font-size: 40px;
+  margin-right: 5%;
+}
+
+.add-to-cart {
+  background-color: rgb(218, 2, 2);
+  font-size: 20px; 
+  cursor: pointer;
+  padding: 10px 15px; 
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+  border-radius: 5px; 
+}
+
+.cart-icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.jeans-image {
+  width: 45%; 
+  display: flex;
+  justify-content: center;
+  margin-right: 15%; 
+}
+
+.jeans-image img {
+  width: 100%; 
+  height: auto;
+}
+
+.jeans-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  gap: 30px;
+  padding: 20px;
+}
+
+.base-jeans {
+  width: 200px;
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 5%;
   z-index: 1;
-  margin-top: -0.9%;
+}
+
+.base-jeans2 {
+  width: 200px;
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 5%;
+}
+
+.base-jeans3 {
+  width: 200px;
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 5%;
+}
+
+.base-jeans4 {
+  width: 200px;
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 5%;
+}
+
+.base-jeans5 {
+  width: 200px;
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 5%;
+}
+
+.filter {
+  margin-top: 10%;
+}
+
+#filters{
+  background-color:#0e6c79;
+  width:200px;
+  float:left;
+  margin-right: 5%;
+  color: white;
+  position: sticky;
+}
+
+#maket, #elements{
+  display: flex;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  text-align: justify;
+  margin-top: 5px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  margin-right: 10px;
+}
+
+#Jeans {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#Jeans article {
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+h3 {
+  text-align: center;
+}
+
+#Jeans article:hover {
+  transform: scale(1.05); 
+  cursor: pointer;
+}
+
+h4 {
+  text-align: center;
+}
+
+footer {
+  margin-top: 5%;
+  background-color: rgb(5, 26, 45);
+  display: flex;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-right: 50%;
+  margin-top: 30px;
+}
+
+.contact-icon {
+  margin-top: 20px;
+  margin-left: 50%;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  margin-top: 0; 
+}
+
+.footer-logo2 {
+  height: auto;
+  margin: 10px 20%; 
 }
