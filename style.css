@@ -296,6 +296,17 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+.fon-txt3 {
+  z-index: 2;
+  color: white;
+  font-size: 80px;
+  font-family: 'Josefin Slab', serif;
+  text-align: center;
+  position: relative;
+  top: 10%;
+  letter-spacing: 20px;
+}
+
 .base-fon {
   position: relative;
   margin-top: 7%;
@@ -318,6 +329,128 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 1; 
+}
+
+.box-boll {
+  display: flex; 
+  /* flex-wrap: wrap;  */
+  position: relative;
+  z-index: 1;
+}
+
+.boll-wrapper, .boll-wrapper2, .boll-wrapper3, .boll-wrapper4, 
+.boll-wrapper5, .boll-wrapper6, .boll-wrapper7, .boll-wrapper8, 
+.boll-wrapper9, .boll-wrapper10 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.boll1 {
+  margin-left: -6vw;
+  margin-top: 10vh;
+}
+
+.boll2 {
+  margin-left: -2vw;
+  margin-top: 5vh;
+}
+
+.clothes {
+  position: absolute;
+  top: 45%; 
+  left: 45%;
+  transform: translate(-50%, -50%);
+
+}
+
+.boll3 {
+  margin-left: -3vw;
+  margin-top: 14vh;
+}
+
+.clothes2 {
+  position: absolute;
+  top: 65%; 
+  left: 30%;
+  transform: translate(-50%, -50%); 
+}
+
+.boll4 {
+  margin-left: -2vw;
+  margin-top: 8vh;
+}
+
+.clothes3 {
+  position: absolute;
+  top: 55%; 
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.boll5 {
+  margin-left: -3vw;
+  margin-top: 13vh;
+}
+
+.clothes4 {
+  position: absolute;
+  top: 60%; 
+  left: 40%;
+  transform: translate(-50%, -50%); 
+}
+
+.boll6 {
+  margin-left: -2vw;
+  margin-top: 16vh;
+}
+
+.clothes5 {
+  position: absolute;
+  top: 65%; 
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.boll7 {
+  margin-left: -3vw;
+  margin-top: 10vh;
+}
+
+.clothes6 {
+  position: absolute;
+  top: 55%; 
+  left: 35%;
+  transform: translate(-50%, -50%); 
+}
+
+.boll8 {
+  margin-left: -3vw;
+  margin-top: 17vh;
+}
+
+.clothes7 {
+  position: absolute;
+  top: 67%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.boll9 {
+  margin-left: -3vw;
+  margin-top: 10vh;
+}
+
+.clothes8 {
+  position: absolute;
+  top: 55%; 
+  left: 40%;
+  transform: translate(-50%, -50%); 
+}
+
+.boll10 {
+  margin-left: -3vw;
+  margin-top: 15vh;
 }
 
 .levis {
