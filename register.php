@@ -34,7 +34,7 @@ $result = pg_query($conn, $sql);
 if (!$result) {
     die("Error in SQL query: " . pg_last_error());
 } else {
-    echo "User registered successfully!";
+    header("Location: index.html");
 }
 
 pg_close($conn);

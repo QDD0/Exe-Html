@@ -21,6 +21,6 @@ if (empty($login) || empty($password)) {
     if (!password_verify($password, $row["password"])) {
         die("Error: Invalid password.");
     } else {
-        echo "Welcome, " . $row["login"];
+        header("Location: index.html");
     }
 }
