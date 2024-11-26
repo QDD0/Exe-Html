@@ -382,7 +382,7 @@ body {
   z-index: 2;
   color: white;
   font-size: 80px;
-  font-family: 'Josefin Slab', serif;
+  font-family: "Josefin Slab", serif;
   text-align: center;
   position: relative;
   top: 10%;
@@ -405,24 +405,31 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; 
-  background-image: url("img/Layer%205%20copy.png"); 
+  height: 100%;
+  background-image: url("img/Layer%205%20copy.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .box-boll {
-  display: flex; 
+  display: flex;
   /* flex-wrap: wrap;  */
   position: relative;
   z-index: 1;
 }
 
-.boll-wrapper, .boll-wrapper2, .boll-wrapper3, .boll-wrapper4, 
-.boll-wrapper5, .boll-wrapper6, .boll-wrapper7, .boll-wrapper8, 
-.boll-wrapper9, .boll-wrapper10 {
+.boll-wrapper,
+.boll-wrapper2,
+.boll-wrapper3,
+.boll-wrapper4,
+.boll-wrapper5,
+.boll-wrapper6,
+.boll-wrapper7,
+.boll-wrapper8,
+.boll-wrapper9,
+.boll-wrapper10 {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -440,10 +447,9 @@ body {
 
 .clothes {
   position: absolute;
-  top: 45%; 
+  top: 45%;
   left: 45%;
   transform: translate(-50%, -50%);
-
 }
 
 .boll3 {
@@ -453,9 +459,9 @@ body {
 
 .clothes2 {
   position: absolute;
-  top: 65%; 
+  top: 65%;
   left: 30%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
 }
 
 .boll4 {
@@ -465,7 +471,7 @@ body {
 
 .clothes3 {
   position: absolute;
-  top: 50%; 
+  top: 50%;
   left: 40%;
   transform: translate(-50%, -50%);
 }
@@ -477,9 +483,9 @@ body {
 
 .clothes4 {
   position: absolute;
-  top: 60%; 
+  top: 60%;
   left: 40%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
 }
 
 .boll6 {
@@ -489,7 +495,7 @@ body {
 
 .clothes5 {
   position: absolute;
-  top: 65%; 
+  top: 65%;
   left: 40%;
   transform: translate(-50%, -50%);
 }
@@ -501,9 +507,9 @@ body {
 
 .clothes6 {
   position: absolute;
-  top: 55%; 
+  top: 55%;
   left: 35%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
 }
 
 .boll8 {
@@ -525,9 +531,9 @@ body {
 
 .clothes8 {
   position: absolute;
-  top: 55%; 
+  top: 55%;
   left: 40%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
 }
 
 .boll10 {
@@ -536,47 +542,47 @@ body {
 }
 
 .levis {
-  position: relative; 
+  position: relative;
   width: 100%;
-  height: 260px; 
+  height: 260px;
 }
 
 .logo {
   position: absolute;
-  margin-top: -1%; 
-  margin-left: 10.3%; 
-  z-index: 2; 
+  margin-top: -1%;
+  margin-left: 10.3%;
+  z-index: 2;
 }
 
 .base-shape {
   position: absolute;
-  left: 9.5%; 
-  top: -5.6%; 
-  z-index: 1; 
+  left: 9.5%;
+  top: -5.6%;
+  z-index: 1;
 }
 
 .overlay-shape {
   position: absolute;
-  left: 33%; 
-  top: -5.6%; 
-  z-index: 1; 
+  left: 33%;
+  top: -5.6%;
+  z-index: 1;
 }
 
 .text-content {
-  position: relative; 
-  margin-top: 0px; 
+  position: relative;
+  margin-top: 0px;
 }
 
 .text-and-image {
-  display: flex; 
-  align-items: flex-start; 
-  justify-content: space-between; 
-  margin-left: 12%; 
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-left: 12%;
   margin-top: 40px;
 }
 
 .text-content-left {
-  width: 60%; 
+  width: 60%;
 }
 
 .txt-info {
@@ -584,13 +590,17 @@ body {
   margin-top: 0;
 }
 
-.txt-info2, .txt-info3, .txt-info4, .txt-info5, .txt-info6 {
-  margin-top: 20px; 
+.txt-info2,
+.txt-info3,
+.txt-info4,
+.txt-info5,
+.txt-info6 {
+  margin-top: 20px;
 }
 
 .price-container {
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   margin-top: 40px;
 }
 
@@ -601,14 +611,14 @@ body {
 
 .add-to-cart {
   background-color: rgb(218, 2, 2);
-  font-size: 20px; 
+  font-size: 20px;
   cursor: pointer;
-  padding: 10px 15px; 
+  padding: 10px 15px;
   color: white;
   display: flex;
   align-items: center;
-  gap: 15px; 
-  border-radius: 5px; 
+  gap: 15px;
+  border-radius: 5px;
 }
 
 .cart-icon {
@@ -618,14 +628,14 @@ body {
 }
 
 .jeans-image {
-  width: 45%; 
+  width: 45%;
   display: flex;
   justify-content: center;
-  margin-right: 15%; 
+  margin-right: 15%;
 }
 
 .jeans-image img {
-  width: 100%; 
+  width: 100%;
   height: auto;
 }
 
@@ -677,16 +687,17 @@ body {
   margin-top: 10%;
 }
 
-#filters{
-  background-color:#0e6c79;
-  width:200px;
-  float:left;
+#filters {
+  background-color: #0e6c79;
+  width: 200px;
+  float: left;
   margin-right: 5%;
   color: white;
   position: sticky;
 }
 
-#maket, #elements{
+#maket,
+#elements {
   display: flex;
 }
 
@@ -722,7 +733,7 @@ h3 {
 }
 
 #Jeans article:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
   cursor: pointer;
 }
 
@@ -739,7 +750,7 @@ footer {
 .contact {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   margin-right: 50%;
   margin-top: 30px;
 }
@@ -751,12 +762,35 @@ footer {
 
 .social-icons {
   display: flex;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   align-items: center;
-  margin-top: 0; 
+  margin-top: 0;
 }
 
 .footer-logo2 {
   height: auto;
-  margin: 10px 20%; 
+  margin: 10px 20%;
+}
+
+form .logout {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 50%;
+  margin-top: 30px;
+  z-index: 10;
+}
+
+.logout:hover {
+  background-color: #d32f2f;
+}
+
+.logout:active {
+  background-color: #b71c1c;
 }

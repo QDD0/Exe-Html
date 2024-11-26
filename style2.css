@@ -1,91 +1,71 @@
 body {
-    background: linear-gradient(
-      to right,
-      #f9c58d,
-      #f492ef
-    ); 
-    height: 100vh; 
-    margin: 0;
-  }
-  
-.form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    padding: 20px;
-    position: relative;
-  }
+  background: linear-gradient(to right, #f9c58d, #f492ef);
+  height: 100vh;
+  margin: 0;
+}
 
-  form {
-    width: 100%;
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 60px;
-    background-color: #fadcd5;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  input[type="text"],
-  input[type="password"] {
-    width: 100%;
-    height: 40px;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #cccccc;
-    border-radius: 50px;
-  }
-  
-  button[type="submit"] {
-    width: 30%;
-    margin-left: 35%;
-    height: 40px;
-    background-color: #4caf50;
-    color: #ffffff;
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #3e8e41;
-  }
-  
-  /* ::-webkit-input-placeholder {
-    color: #ccc;
-  }
-  
-  :-moz-placeholder {
-    color: #ccc;
-  }
-  
-  ::-moz-placeholder {
-    color: #ccc;
-  }
-  
-  :-ms-input-placeholder {
-    color: #ccc;
-  } */
-  
-  .title,
-  .reg-title {
-    text-align: center;
-    font-size: 30px;
-  }
-  
-  .reg {
-    text-align: center;
-    margin-top: 5%;
-  }
-  
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 60px;
+  background-color: #fadcd5;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 50px;
+}
+
+button[type="submit"] {
+  width: 30%;
+  margin-left: 35%;
+  height: 40px;
+  background-color: #4caf50;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.title,
+.reg-title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.reg {
+  text-align: center;
+  margin-top: 5%;
+}
+
 .reg a {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .into {
