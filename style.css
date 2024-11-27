@@ -184,198 +184,121 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .menu {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .menu a {
-    padding: 15px 25px;
-    text-align: center;
-  }
-
-  .dropdown-content {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-  }
-
-  .dropdown-content .column {
-    width: 100%;
-    padding: 10px;
-    border-left: none;
-  }
-
-  .tring {
-    right: 10%;
-    margin-top: 2vh;
-  }
-}
-
-@media (max-width: 480px) {
-  .menu a {
-    padding: 10px 15px;
-  }
-
-  .menu li {
-    width: 100%;
-  }
-
-  .dropdown-content {
-    width: 100%;
-  }
-}
-
 .image-stack {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 5px;
-  padding: 20px;
+  justify-content: center;
+  gap: 20px;
+  padding: 5%;
 }
 
-.image-txt {
-  flex-wrap: wrap;
-  padding: 20px;
-  z-index: 1;
+.item {
+  position: relative;
+  width: 250px;
+}
+
+.base-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .text-image {
-  margin-left: 7vw;
+  margin-left: 0;
   margin-top: 9%;
   position: absolute;
   z-index: 3;
 }
 
-.price-image {
-  margin-left: 8vw;
-  margin-top: 20%;
-  position: absolute;
-  z-index: 3;
-}
-
 .shirt-image {
-  margin-left: 13.3vw;
-  margin-top: 8%;
   position: absolute;
+  margin-top: 0%;
+  margin-left: 52%;
   z-index: 3;
 }
 
 .overlay-image {
   position: absolute;
-  z-index: 3;
-  margin-left: 7.5vw;
-  margin-top: 12.5%;
+  margin-top: 30%;
+  margin-left: -15%;
 }
 
-.image-txt {
-  flex-wrap: wrap;
-  padding: 20px;
-  z-index: 1;
-}
-
-.overlay-image2 {
+.price-image {
   position: absolute;
-  z-index: 3;
-  margin-left: 32vw;
-  margin-top: 8%;
+  margin-top: 70%;
+  margin-left: -10%;
+}
+
+.text-image2 {
+  margin-left: 0;
+  margin-top: 9%;
 }
 
 .shirt-image2 {
   position: absolute;
-  margin-left: 36.6vw;
-  margin-top: 10.9%;
+  margin-top: 25%;
+  margin-left: 47%;
 }
 
 .price-image2 {
-  position: absolute;
-  margin-left: 32vw;
-  margin-top: 18%;
+  margin-bottom: 6%;
+  margin-left: -10%;
 }
 
 .text-image3 {
-  position: absolute;
-  margin-left: 54.5vw;
   margin-top: 7%;
 }
 
 .overlay-image3 {
-  position: absolute;
-  margin-left: 55vw;
-  margin-top: 14%;
+  margin-bottom: 37%;
+  margin-right: 50%;
 }
 
 .shirt-image3 {
+  margin-top: 35%;
+  margin-left: 50%;
   position: absolute;
-  margin-left: 59.9vw;
-  margin-top: 12.6%;
-  z-index: 1;
+  z-index: 3;
 }
 
 .price-image3 {
+  margin-top: 70%;
+  margin-left: 0%;
   position: absolute;
-  margin-left: 54.5vw;
-  margin-top: 19%;
+  z-index: 1;
 }
 
 .overlay-image4 {
   position: absolute;
-  margin-left: 76vw;
-  margin-top: 7%;
+  margin-top: 50%;
 }
 
-.text-image4 {
+.rectangle {
   position: absolute;
-  margin-left: 79vw;
-  margin-top: 15%;
+  margin-top: 75%;
+  margin-left: -38%;
+  z-index: 1;
 }
 
 .price-image4 {
   position: absolute;
-  margin-left: 75.2vw;
-  margin-top: 20%;
+  margin-top: 78%;
+  margin-left: -35%;
+  z-index: 3;
 }
 
-.price-image5 {
+.content {
   position: absolute;
-  margin-left: 76vw;
-  margin-top: 20.5%;
-  z-index: 1;
-}
-
-.base-image {
-  width: 250px;
-  height: auto;
-  flex-shrink: 0;
-  margin-top: 5%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  z-index: 1;
-}
-
-.base-image2 {
-  width: 250px;
-  height: auto;
-  flex-shrink: 0;
-  margin-top: 5%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.base-image3 {
-  width: 250px;
-  height: auto;
-  flex-shrink: 0;
-  margin-top: 5%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.base-image4 {
-  width: 250px;
-  height: auto;
-  flex-shrink: 0;
-  margin-top: 5%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .fon-txt3 {
@@ -391,7 +314,7 @@ body {
 
 .base-fon {
   position: relative;
-  margin-top: 7%;
+  margin-top: 0%;
   width: 100%;
   height: 600px;
   background-image: url("img/ZebraTwo.png");
@@ -793,4 +716,10 @@ form .logout {
 
 .logout:active {
   background-color: #b71c1c;
+}
+
+@media print {
+  .logout {
+    display: none;
+  }
 }
