@@ -723,3 +723,9 @@ form .logout {
     display: none;
   }
 }
+
+@media print {
+  .contact, .social-icons {
+    display: none;
+  }
+}
