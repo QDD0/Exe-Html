@@ -9,4 +9,6 @@ function toggleForms() {
     loginForm.style.display = "none";
     registerForm.style.display = "block";
   }
+
+  resetAvatarPreview();
 }

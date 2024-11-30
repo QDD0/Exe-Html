@@ -26,8 +26,34 @@ $m_name = pg_escape_string($conn, $m_name);
 $login = pg_escape_string($conn, $login);
 $email = pg_escape_string($conn, $email);
 
-$sql = "INSERT INTO users (first_name, last_name, middle_name, login, password, email) 
-        VALUES ('$f_name', '$l_name', '$m_name', '$login', '$hashed_password', '$email')";
+$avatarPath = null;
+if (isset($_FILES['avatar']) && $_FILES['avatar']['error'] === UPLOAD_ERR_OK) {
+    $uploadDir = 'uploads/';
+    if (!is_dir($uploadDir)) {
+        mkdir($uploadDir, 0777, true);
+    }
+
+    $fileTmpPath = $_FILES['avatar']['tmp_name'];
+    $fileName = basename($_FILES['avatar']['name']);
+    $fileExt = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
+    $allowedExts = ['jpg', 'jpeg', 'png', 'gif'];
+
+    if (in_array($fileExt, $allowedExts)) {
+        $newFileName = uniqid('avatar_', true) . '.' . $fileExt;
+        $destPath = $uploadDir . $newFileName;
+
+        if (move_uploaded_file($fileTmpPath, $destPath)) {
+            $avatarPath = pg_escape_string($conn, $destPath);
+        } else {
+            die("Error: Unable to save the uploaded file.");
+        }
+    } else {
+        die("Error: Invalid file format. Allowed formats are jpg, jpeg, png, gif.");
+    }
+}
+
+$sql = "INSERT INTO users (first_name, last_name, middle_name, login, password, email, avatar) 
+        VALUES ('$f_name', '$l_name', '$m_name', '$login', '$hashed_password', '$email', '$avatarPath')";
 
 $result = pg_query($conn, $sql);
 
@@ -38,3 +64,4 @@ if (!$result) {
 }
 
 pg_close($conn);
+?>
