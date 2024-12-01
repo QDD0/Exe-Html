@@ -1,5 +1,6 @@
 <?php
 
+global $conn;
 require_once('db.php');
 
 $login = $_POST["login"];

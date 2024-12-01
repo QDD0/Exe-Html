@@ -1,5 +1,6 @@
 <?php
 
+global $conn;
 require_once('db.php');
 
 $f_name = $_POST["first_name"];
